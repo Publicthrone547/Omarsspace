@@ -41,8 +41,8 @@ function sendNotification() {
     if (Notification.permission === 'granted') {
         // Отправляем уведомление
         navigator.serviceWorker.getRegistration().then(function(registration) {
-            registration.showNotification('Новое сообщение', {
-                body: 'Текст вашего сообщения здесь'
+            registration.showNotification('Тест', {
+                body: 'Проверка 123'
             });
         });
     } else if (Notification.permission !== 'denied') {
@@ -57,3 +57,13 @@ function sendNotification() {
 
 // Вызываем функцию отправки уведомления каждые 30 секунд
 setInterval(sendNotification, 30000); // 30000 миллисекунд = 30 секунд
+
+  if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function(err) {
+                console.error('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
