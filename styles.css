@@ -54,7 +54,7 @@ video {
   color: white;
 }
 .notification-container {
-            background-color: #fff;
+            background-color: #000000;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -63,7 +63,7 @@ video {
         button {
             padding: 15px 25px;
             font-size: 16px;
-            background-color: #4CAF50;
+            background-color:#808080;
             color: white;
             border: none;
             cursor: pointer;
@@ -73,5 +73,5 @@ video {
         }
 
         button:hover {
-            background-color: #45a049;
+            background-color: #696969;
         }
