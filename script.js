@@ -57,3 +57,17 @@ function sendNotification() {
 
 // Вызываем функцию отправки уведомления каждые 30 секунд
 setInterval(sendNotification, 10000); // 30000 миллисекунд = 30 секунд
+
+        function requestNotificationPermission() {
+            if (Notification.permission === 'granted') {
+                console.log('Уведомления уже разрешены');
+            } else if (Notification.permission !== 'denied') {
+                Notification.requestPermission().then(function(permission) {
+                    if (permission === 'granted') {
+                        console.log('Уведомления разрешены');
+                    }
+                });
+            }
+        }
+
+        document.getElementById('requestPermissionButton').addEventListener('click', requestNotificationPermission);
