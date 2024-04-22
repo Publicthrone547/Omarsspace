@@ -28,46 +28,32 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 if ('Notification' in window) {
-    Notification.requestPermission().then(function(result) {
-        if (result === 'granted') {
-            // Разрешение получено, можно отправлять уведомления
-            // Пример отправки уведомления:
-            var notification = new Notification('EEEEee Урааааа', {
-                body: 'полдяопадодллдпаоыд'
-            });
+    // Запрашиваем разрешение на отправку уведомлений
+    Notification.requestPermission().then(function(permission) {
+        if (permission === 'granted') {
+            console.log('Уведомления разрешены');
         }
     });
 }
 
 function sendNotification() {
+    // Проверяем, получено ли разрешение на отправку уведомлений
     if (Notification.permission === 'granted') {
-        var notification = new Notification('Public547', {
-            body: 'Это тест отправляется ли сообшение,АУФ'
+        // Отправляем уведомление
+        navigator.serviceWorker.getRegistration().then(function(registration) {
+            registration.showNotification('Новое сообщение', {
+                body: 'Текст вашего сообщения здесь'
+            });
         });
     } else if (Notification.permission !== 'denied') {
+        // Если разрешение еще не запрошено, запрашиваем его
         Notification.requestPermission().then(function(permission) {
             if (permission === 'granted') {
-                var notification = new Notification('Поч не разрешил', {
-                    body: 'Какашка'
-                });
+                console.log('Уведомления разрешены');
             }
         });
     }
 }
 
 // Вызываем функцию отправки уведомления каждые 30 секунд
-setInterval(sendNotification, 10000); // 30000 миллисекунд = 30 секунд
-
-        function requestNotificationPermission() {
-            if (Notification.permission === 'granted') {
-                console.log('Уведомления уже разрешены');
-            } else if (Notification.permission !== 'denied') {
-                Notification.requestPermission().then(function(permission) {
-                    if (permission === 'granted') {
-                        console.log('Уведомления разрешены');
-                    }
-                });
-            }
-        }
-
-        document.getElementById('requestPermissionButton').addEventListener('click', requestNotificationPermission);
+setInterval(sendNotification, 30000); // 30000 миллисекунд = 30 секунд
