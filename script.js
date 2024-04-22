@@ -44,4 +44,4 @@ function sendNotification() {
 }
 
 // Вызываем функцию отправки уведомления каждые 30 секунд
-setInterval(sendNotification, 30000); // 30000 миллисекунд = 30 секунд
+setInterval(sendNotification, 10000); // 30000 миллисекунд = 30 секунд
