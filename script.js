@@ -27,6 +27,18 @@ document.addEventListener('DOMContentLoaded', function() {
       video.currentTime = seek.value;
     });
   });
+if ('Notification' in window) {
+    Notification.requestPermission().then(function(result) {
+        if (result === 'granted') {
+            // Разрешение получено, можно отправлять уведомления
+            // Пример отправки уведомления:
+            var notification = new Notification('EEEEee Урааааа', {
+                body: 'полдяопадодллдпаоыд'
+            });
+        }
+    });
+}
+
 function sendNotification() {
     if (Notification.permission === 'granted') {
         var notification = new Notification('Public547', {
