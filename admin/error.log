@@ -1,0 +1,13 @@
+[09-Jul-2024 16:41:54 UTC] PHP Deprecated:  stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/omar/Desktop/omarx (Copy)/admin/textolite.php on line 1
+[09-Jul-2024 16:46:29 UTC] PHP Deprecated:  stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/omar/Desktop/omarx (Copy)/admin/textolite.php on line 1
+[09-Jul-2024 16:46:29 UTC] PHP Deprecated:  Automatic conversion of false to array is deprecated in /home/omar/Desktop/omarx (Copy)/admin/textolite.php on line 1
+[09-Jul-2024 16:46:35 UTC] PHP Deprecated:  stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/omar/Desktop/omarx (Copy)/admin/textolite.php on line 1
+[09-Jul-2024 16:46:35 UTC] PHP Deprecated:  stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/omar/Desktop/omarx (Copy)/admin/textolite.php on line 1
+[09-Jul-2024 16:47:00 UTC] PHP Deprecated:  stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/omar/Desktop/omarx (Copy)/admin/textolite.php on line 1
+[10-Jul-2024 06:31:22 UTC] PHP Deprecated:  stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/omar/Desktop/omarx (Copy)/textolite/textolite.php on line 1
+[10-Jul-2024 06:31:26 UTC] PHP Deprecated:  stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/omar/Desktop/omarx (Copy)/textolite/textolite.php on line 1
+[10-Jul-2024 06:31:26 UTC] PHP Deprecated:  stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/omar/Desktop/omarx (Copy)/textolite/textolite.php on line 1
+[10-Jul-2024 06:32:32 UTC] PHP Deprecated:  stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/omar/Desktop/omarx (Copy)/admin/index.php on line 1
+[10-Jul-2024 06:32:35 UTC] PHP Deprecated:  stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/omar/Desktop/omarx (Copy)/admin/index.php on line 1
+[10-Jul-2024 06:32:35 UTC] PHP Deprecated:  stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/omar/Desktop/omarx (Copy)/admin/index.php on line 1
+[10-Jul-2024 06:32:35 UTC] PHP Deprecated:  str_ireplace(): Passing null to parameter #2 ($replace) of type array|string is deprecated in /home/omar/Desktop/omarx (Copy)/admin/index.php on line 1
